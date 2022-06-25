@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de réservation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<div class="testbox">
+  <form>
+    <img src="./ressources/logo.png" alt="">
+    <div class="banner">
+      <h1>Formulaire de Réservation</h1>
+    </div>
+    <br />
+    <fieldset>
+      <legend>Détails de réservation</legend>
+      <div class="columns">
+        <div class="item">
+          <label for="fname">Nom<span>*</span></label>
+          <input id="fname" type="text" name="fname" />
+        </div>
+        <div class="item">
+          <label for="lname"> Prénom<span>*</span></label>
+          <input id="lname" type="text" name="lname" />
+        </div>
+        <div class="item">
+          <label for="phone">Numéro de téléphone<span>*</span></label>
+          <input id="phone" type="tel" name="phone" />
+        </div>
+        <div class="item">
+          <label for="eaddress">Email<span>*</span></label>
+          <input id="eaddress" type="text" name="eaddress" />
+        </div>
+        
+        
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Dates</legend>
+      <div class="columns">
+        <div class="item">
+          <label for="checkindate">Date d'arrivée <span>*</span></label>
+          <input id="checkindate" type="date" name="checkindate" />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <label for="checkoutdate">Date de départ <span>*</span></label>
+          <input id="checkoutdate" type="date" name="checkoutdate" />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        
+        <div class="item">
+          <p>Nombre d'adultes</p>
+          <select>
+            <option value="8" disabled selected>Nombre d'adultes</option>
+            <option value="9">1</option>
+            <option value="10">2</option>
+            <option value="11">3</option>
+            <option value="12">4</option>
+            <option value="13">5</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Nombre d'enfants</p>
+          <select>
+            <option value="14" disabled selected>Nombre d'enfants</option>
+            <option value="15">0</option>
+            <option value="16">1</option>
+            <option value="17">2</option>
+            <option value="18">3</option>
+            <option value="19">4</option>
+            <option value="19">5</option>
+          </select>
+        </div>
+        <div class="item" style=width:100%>
+          <label for="room">Nombre de chambres</label>
+          <input id="room" type="number" name="room" />
+        </div>
+        <div class="item">
+          <p>Type de chambre 1</p>
+          <select>
+            <option value="20" selected></option>
+            <option value="21">Standard</option>
+            <option value="22">Deluxe</option>
+            <option value="23">Suite</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Type de chambre 2</p>
+          <select>
+            <option value="24" selected></option>
+            <option value="25">Standard</option>
+            <option value="26">Deluxe</option>
+            <option value="27">Suite</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Type de chambre 3</p>
+          <select>
+            <option value="24" selected></option>
+            <option value="25">Standard</option>
+            <option value="26">Deluxe</option>
+            <option value="27">Suite</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Type de chambre 4</p>
+          <select>
+            <option value="24" selected></option>
+            <option value="25">Standard</option>
+            <option value="26">Deluxe</option>
+            <option value="27">Suite</option>
+          </select>
+        </div>
+      </div>
+      <div class="item">
+        <label for="instruction">Instructions spéciales</label>
+        <textarea id="instruction" rows="3"></textarea>
+      </div>
+    </fieldset>
+    <div class="btn-block">
+      <button type="submit" href="/">Envoyer</button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
